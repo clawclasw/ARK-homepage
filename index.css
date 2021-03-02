@@ -59,7 +59,7 @@ div.header {
     left: 0;
     z-index: 0;
 
-    width: 1903px;
+    width: 100%;
 }
 
 #waves {
@@ -68,7 +68,7 @@ div.header {
     left: 0;
     z-index: 1;
 
-    width: 1903px;
+    width: 100%;
 }
 
 #bars-and-stars {
@@ -87,12 +87,14 @@ div.row {
 
 div.row.dark {
     background-color: #294546;
+    color: #fff;
 
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
 }
 
 div.row.light {
     background-color: #DEAE57;
+    color: #222;
 }
 
 div.section {
@@ -104,7 +106,7 @@ div.section {
 div.column {
     display: flex;
     flex-direction: column;
-    gap: 30.7px;
+    gap: 3vh;
     align-items: center;
 
     width: 25%;
@@ -112,7 +114,7 @@ div.column {
 
 div.column.wide {
     width: 50%;
-    gap: 40px;
+    gap: 3.5vh;
 }
 
 /* SPECIAL CASES */
@@ -124,7 +126,7 @@ div.showcase {
 }
 
 div.showcase.inner {
-    gap: 50px;
+    gap: 2.5vw;
 }
 
 img.showcase {
@@ -132,7 +134,7 @@ img.showcase {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 
     /* Kept to the same ratio as original images. */
-    width: 422.4px;
+    width: 23vw;
 }
 
 
@@ -160,9 +162,7 @@ svg.yt {
     display: block;
     position: relative;
 
-    /* Original 1280 x 720. */
-    width: 898px;
-    height: 506px;
+    width: 49vw;
 
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 
