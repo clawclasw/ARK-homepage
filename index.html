@@ -19,6 +19,14 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+        <script>
+            // Only show the boat after the waves have loaded in.
+            // HTML doesn't respect order of elements when rendering, so make it do it ourselves.
+            $(document).ready(function() {
+                document.getElementById("boat").style.visibility = "visible";
+            });
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -27,8 +35,8 @@
 
         <!-- TODO: Wave movement as you scroll downwards?  -->
         <div class="header">
-            <img id="boat" class="undraggable" src="boat.png" />
             <img id="waves" class="undraggable" src="waves.png" />
+            <img id="boat" class="undraggable" src="boat.png" />
         </div>
 
         <div class="row dark">
