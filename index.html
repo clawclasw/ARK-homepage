@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <title>ARK</title>
         <meta name="description" content="An ARMA community founded in February 2014, actively running ARMA 3 sessions every Saturday, 7pm GMT.">
-        <meta name="author" content="Design/Implementation: Cameron Bamford, Illustrations: Johannes Carlsten - http://www.johannescarlsten.com/">
+        <meta name="author" content="Design/Implementation: Cam, Illustrations: Johannes Carlsten - http://www.johannescarlsten.com/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/index.css">
 
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -21,10 +21,9 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
         <script>
-            // Only show the boat after the waves have loaded in.
-            // HTML doesn't respect order of elements when rendering, so make it do it ourselves.
+            // Only show content after fully loaded.
             $(document).ready(function() {
-                document.getElementById("boat").style.visibility = "visible";
+                document.getElementsByTagName("html")[0].style.visibility = "visible";
             });
         </script>
     </head>
@@ -35,34 +34,34 @@
 
         <!-- TODO: Wave movement as you scroll downwards?  -->
         <div class="header">
-            <img id="waves" class="undraggable" src="waves.png" />
-            <img id="boat" class="undraggable" src="boat.png" />
+            <img id="waves" class="undraggable" src="images/waves.png" />
+            <img id="boat" class="undraggable" src="images/boat.png" />
         </div>
 
         <div class="row dark">
             <div class="showcase">
                 <div class="column">
-                    <a href="images/image_109.jpg" data-fancybox="gallery" data-caption="An ARK squad patrols the Vietnamese skies looking for Vietcong.<br/><i>Taken by <b>Fladderpony</b></i>">
-                        <img class="showcase bordered" src="images/image_109.jpg" />
+                    <a href="gallery/image_109.jpg" data-fancybox="gallery" data-caption="An ARK squad patrols the Vietnamese skies looking for Vietcong.<br/><i>Taken by <b>Fladderpony</b></i>">
+                        <img class="showcase bordered" src="gallery/image_109.jpg" />
                     </a>
-                    <a href="images/image_100.jpg" data-fancybox="gallery" data-caption="Two enemy Hinds have an accident mid-mission.<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_100.jpg" />
+                    <a href="gallery/image_100.jpg" data-fancybox="gallery" data-caption="Two enemy Hinds have an accident mid-mission.<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_100.jpg" />
                     </a>
-                    <a href="images/image_108.jpg" data-fancybox="gallery" data-caption="Commander <b>Chairborne</b> takes a scouting position on a nearby slide.<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_108.jpg" />
+                    <a href="gallery/image_108.jpg" data-fancybox="gallery" data-caption="Commander <b>Chairborne</b> takes a scouting position on a nearby slide.<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_108.jpg" />
                     </a>
-                    <a href="images/image_97.jpg" data-fancybox="gallery" data-caption="An ARK tank crew assaults an enemy position.<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_97.jpg" />
+                    <a href="gallery/image_97.jpg" data-fancybox="gallery" data-caption="An ARK tank crew assaults an enemy position.<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_97.jpg" />
                     </a>
                 </div>
 
                 <div class="column wide">
                     <div class="showcase inner">
-                        <a href="images/image_106.jpg" data-fancybox="gallery" data-caption="An ARK fireteam frolicks through a pretty field.<br/><i>Taken by <b>Cyruz</b></i>">
-                            <img class="showcase bordered" src="images/image_106.jpg" />
+                        <a href="gallery/image_106.jpg" data-fancybox="gallery" data-caption="An ARK fireteam frolicks through a pretty field.<br/><i>Taken by <b>Cyruz</b></i>">
+                            <img class="showcase bordered" src="gallery/image_106.jpg" />
                         </a>
-                        <a href="images/image_104.jpg" data-fancybox="gallery" data-caption="<b>Action Dan</b> leads the way.<br/><i>Taken by <b>Cyruz</b></i>">
-                            <img class="showcase bordered" src="images/image_104.jpg" />
+                        <a href="gallery/image_104.jpg" data-fancybox="gallery" data-caption="<b>Action Dan</b> leads the way.<br/><i>Taken by <b>Cyruz</b></i>">
+                            <img class="showcase bordered" src="gallery/image_104.jpg" />
                         </a>
                     </div>
 
@@ -74,27 +73,27 @@
                     </a>
 
                     <div class="showcase inner">
-                        <a href="images/image_101.jpg" data-fancybox="gallery" data-caption="Chernobyl or a meth lab?<br/><i>Taken by <b>Cyruz</b></i>">
-                            <img class="showcase bordered" src="images/image_101.jpg" />
+                        <a href="gallery/image_101.jpg" data-fancybox="gallery" data-caption="Chernobyl or a meth lab?<br/><i>Taken by <b>Cyruz</b></i>">
+                            <img class="showcase bordered" src="gallery/image_101.jpg" />
                         </a>
-                        <a href="images/image_83.jpg" data-fancybox="gallery" data-caption="Mass casualties, ARK approved.<br/><i>Taken by <b>Cyruz</b></i>">
-                            <img class="showcase bordered" src="images/image_83.jpg" />
+                        <a href="gallery/image_83.jpg" data-fancybox="gallery" data-caption="Mass casualties, ARK approved.<br/><i>Taken by <b>Cyruz</b></i>">
+                            <img class="showcase bordered" src="gallery/image_83.jpg" />
                         </a>
                     </div>
                 </div>
 
                 <div class="column">
-                    <a href="images/image_98.jpg" data-fancybox="gallery"  data-caption="A handsome ARK AR/AAR team.<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_98.jpg" />
+                    <a href="gallery/image_98.jpg" data-fancybox="gallery"  data-caption="A handsome ARK AR/AAR team.<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_98.jpg" />
                     </a>
-                    <a href="images/image_82.jpg" data-fancybox="gallery" data-caption="Huh?<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_82.jpg" />
+                    <a href="gallery/image_82.jpg" data-fancybox="gallery" data-caption="Huh?<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_82.jpg" />
                     </a>
-                    <a href="images/image_91.jpg" data-fancybox="gallery" data-caption="A brave first responder, a CO with a pistol looking confused.<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_91.jpg" />
+                    <a href="gallery/image_91.jpg" data-fancybox="gallery" data-caption="A brave first responder, a CO with a pistol looking confused.<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_91.jpg" />
                     </a>
-                    <a href="images/image_84.jpg" data-fancybox="gallery" data-caption="Happy Halloween!<br/><i>Taken by <b>Cyruz</b></i>">
-                        <img class="showcase bordered" src="images/image_84.jpg" />
+                    <a href="gallery/image_84.jpg" data-fancybox="gallery" data-caption="Happy Halloween!<br/><i>Taken by <b>Cyruz</b></i>">
+                        <img class="showcase bordered" src="gallery/image_84.jpg" />
                     </a>
                 </div>
             </div>
@@ -108,7 +107,7 @@
                 <p>ARK was founded in February 2014, and since then we've grown from 5 players to 50 active members. We regularly have 20-25 players in our main Saturday sessions. All of our members were picked based on their fit in the group, rather than their skillset or experience in ARMA. If you're willing to listen and help contribute to the group, we'll be happy to have you aboard.</p>
                 <p>As well as our ARMA sessions, we often play other games like <i>generic flavour of the month</i>, Insurgency, Squad and CS GO, and chat on our active Teamspeak and Slack channels.</p>
             
-                <img id="birds" class="undraggable" src="birds.png" />
+                <img id="birds" class="undraggable" src="images/birds.png" />
             </div>
         </div>
 
@@ -122,7 +121,7 @@
 
                 <p>All of our missions are made from scratch with our players in mind. As a result, the variety of missions played is exceptional, ranging from terrifying and fast paced vehicle convoys to more careful objectives. While we mostly play missions against AI, each Saturday event will usually feature at least one mission where we pit players against each other for a more challenging experience.</p>
 
-                <img id="giraffe" class="undraggable" src="giraffe.png" />
+                <img id="giraffe" class="undraggable" src="images/giraffe.png" />
             </div>
         </div>
 
@@ -134,7 +133,7 @@
             
                 <p>Every Sunday, we have community-run events where we get together to play a random game from a communal suggestion thread.</p>
 
-                <img id="dog" class="undraggable" src="dog.png" />
+                <img id="dog" class="undraggable" src="images/dog.png" />
             </div>
         </div>
 
@@ -144,11 +143,11 @@
 
                 <div class="showcase inner">
                     <div>
-                        <img class="showcase undraggable" src="hull.png" />
+                        <img class="showcase undraggable tool" src="images/hull.png" />
                         <p>is our completely <b>in-house mission framework</b>, used for all missions, made from scratch to suit our playstyle.</p>
                     </div>
                     <div>
-                        <img class="showcase undraggable" src="admiral.png" />
+                        <img class="showcase undraggable tool" src="images/admiral.png" />
                         <p>is the <b>AI suite</b> that powers our COOP missions, creating a difficult and unique challenge for each playthrough.</p>
                     </div>
                 </div>
@@ -159,14 +158,29 @@
             <div class="section">
                 <h1>The <b>Rules</b></h1>
 
-                <div class="rules">
-                    <p class="rule bordered">Players must be <b>over the age of 18</b>.</p>
-                    <p class="rule bordered">Players must be <b>respectful</b> and <b>willing to engage</b> within the community.</p>
-                    <p class="rule bordered">Players must have a <b>working and audible microphone</b>, be able to use <b>Teamspeak 3</b> and <b>install our modset via Swifty</b>.</p>
-                    <p class="rule bordered">Players must own a <b>legal copy of Arma 3</b>, this includes the <b>Apex expansion</b>, the <b>Contact DLC</b> and the <b>Global Mobilization CDLC</b>.</p>
-                </div>
+                <ol>
+                    <li>
+                        Players must be <b>over the age of 18</b>
+                    </li>
 
-                <p class="rule wide bordered">Players must participate on a <b>regular basis</b> in our Saturday sessions, a minimum of <b>one Saturday per month</b>. Failure to attend sessions on a regular basis will result in player-removal. Our sessions are at <b>7pm UK time</b>.</p>
+                    <li>
+                        Players must be <b>respectful</b> and <b>willing to engage</b> within the community.</b>
+                    </li>
+
+                    <li>
+                        Players must have a <b>working and audible microphone</b>, be able to use <b>Teamspeak 3</b> and <b>install our modset via Swifty</b>.
+                    </li>
+
+                    <li>
+                        Players must own a <b>legal copy of Arma 3</b>, this includes the <b>Apex expansion</b>, the <b>Contact DLC</b> and the <b>Global Mobilization CDLC</b>.
+                    </li>
+
+                    <li>
+                        Players must participate on a <b>regular basis</b> in our Saturday sessions, a minimum of <b>one Saturday per month</b>. Failure to attend sessions on a regular basis will result in player-removal. Our sessions are at <b>7pm UK time</b>.
+                    </li>
+                </ol>
+
+                <img id="lion" class="undraggable" src="images/lion.png" />
             </div>
         </div>
 
