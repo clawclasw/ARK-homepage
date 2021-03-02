@@ -105,10 +105,23 @@ div.header {
     top: -2vh;
 }
 
-@media only screen and (max-device-width : 730px) {
+@media only screen and (max-width : 730px) {
     #birds {
         left: 50vw;
         top: 13vh;
+    }
+}
+
+
+#giraffe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width : 1350px) {
+    #giraffe {
+        visibility: hidden;
     }
 }
 
@@ -118,20 +131,8 @@ div.header {
     bottom: -25px;
 }
 
-@media only screen and (max-device-width : 730px) {
+@media only screen and (max-width : 1200px) {
     #dog {
-        visibility: hidden;
-    }
-}
-
-#giraffe {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-@media only screen and (max-device-width : 730px) {
-    #giraffe {
         visibility: hidden;
     }
 }
@@ -142,7 +143,7 @@ div.header {
     bottom: -45px;
 }
 
-@media only screen and (max-device-width : 730px) {
+@media only screen and (max-width : 1450px) {
     #lion {
         visibility: hidden;
     }
@@ -181,7 +182,7 @@ div.section {
 div.column {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 2.9vh;
     align-items: center;
 
     width: 25%;
@@ -201,7 +202,7 @@ div.showcase {
 }
 
 div.showcase.inner {
-    gap: 2.5vw;
+    gap: 1.7vw;
 }
 
 img.showcase {
@@ -209,7 +210,6 @@ img.showcase {
 
     outline: none;
 }
-
 
 .fancybox-active {
   width: 100% !important;
