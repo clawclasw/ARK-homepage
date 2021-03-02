@@ -196,19 +196,28 @@ div.column.wide {
 /* SPECIAL CASES */
 
 div.showcase {
-    display: flex;
-    align-items: center;
+    display: grid;
+
+    /* Taken from the expected sizes of the images, below. */
+    grid-template-columns: 23vw 23vw 23vw 23vw;
+    grid-template-rows: 12.9834895833vw 12.9834895833vw 12.9834895833vw 12.9834895833vw;
+
+    grid-gap: 16px;
+    padding: 16px;
+
     justify-content: center;
+}
+
+img.showcase {
+    /* Retains ratio of 1920 x 1080. */
+    width: 23vw;
+    height: 12.9834895833vw;
+
+    outline: none;
 }
 
 div.showcase.inner {
     gap: 1.7vw;
-}
-
-img.showcase {
-    width: 23vw;
-
-    outline: none;
 }
 
 .fancybox-active {
@@ -223,7 +232,7 @@ svg.yt {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 20%;
+    top: calc(20%);
     text-align: center;
     z-index: 1;
 
@@ -232,14 +241,14 @@ svg.yt {
 }
 
 .yir {
-    display: block;
     position: relative;
-
-    width: 49vw;
-
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 
     color: #222;
+
+    /* Account for the gap between the two images in the rows above and below this vid. */
+    width: calc(46vw + 16px);
+    height: calc(25.9669791666vw + 16px);
 
     outline: none;
 }
@@ -250,9 +259,18 @@ svg.yt {
 
 /* TOOLS */
 
+div.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7vw;
+}
+
 img.tool {
     display:block;
     margin:auto;
+    
+    width: 23vw;
 }
 
 /* RULES */
