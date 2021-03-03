@@ -16,19 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="jquery.waitforimages.min.js"></script>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-        <script>
-            // Only show boat+waves after both have fully loaded.
-            $("#waves").ready(function() {
-                $("#boat").ready(function() {
-                    document.getElementById("waves").style.visibility = "visible";
-                    document.getElementById("boat").style.visibility = "visible";
-                });
-            });
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -39,6 +30,15 @@
             <img id="waves" class="undraggable" src="images/waves.png" />
             <img id="boat" class="undraggable" src="images/boat.png" />
         </div>
+
+        <!-- Script that displays boat+waves after both images are downloaded, to prevent partial rendering. -->
+        <script>
+            $("div.header").waitForImages(function() {
+                console.log($("#waves").length)
+                $("#waves").css("visibility", "visible");
+                $("#boat").css("visibility", "visible");
+            });
+        </script>
 
         <div class="row dark">
             <div class="showcase">

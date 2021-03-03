@@ -80,7 +80,7 @@ div.header {
 }
 
 #boat {
-    /* Will be made visible by JQuery after full load, to prevent loading before #waves. */
+    /* Will be made visible by JQuery after full load, to prevent rendering before downloaded. */
     visibility: hidden;
 
     position: fixed;
@@ -93,6 +93,9 @@ div.header {
 }
 
 #waves {
+    /* Will be made visible by JQuery after full load, to prevent rendering before downloaded. */
+    visibility: hidden;
+
     position: absolute;
     bottom: 0;
     left: 0;
