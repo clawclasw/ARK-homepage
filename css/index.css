@@ -4,10 +4,14 @@ html {
     background-color: #478F91;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+
+    /* Prevent scrolling while the page loads. This is disabled via JS after header images are loaded.. */
+    overflow-y: hidden;
+
+    overflow-x: hidden;
 }
 
 html, body {
-    overflow-x: hidden;
     margin: 0;
 }
 

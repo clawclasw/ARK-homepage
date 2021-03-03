@@ -34,9 +34,12 @@
         <!-- Script that displays boat+waves after both images are downloaded, to prevent partial rendering. -->
         <script>
             $("div.header").waitForImages(function() {
-                console.log($("#waves").length)
+                // Display header images.
                 $("#waves").css("visibility", "visible");
                 $("#boat").css("visibility", "visible");
+
+                // Give the user their scrollbar back.
+                $("html").css("overflow-y", "auto");
             });
         </script>
 
