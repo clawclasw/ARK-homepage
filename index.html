@@ -21,9 +21,12 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
         <script>
-            // Only show boat after waves have fully loaded.
+            // Only show boat+waves after both have fully loaded.
             $("#waves").ready(function() {
-                document.getElementById("boat").style.visibility = "visible";
+                $("#boat").ready(function() {
+                    document.getElementById("waves").style.visibility = "visible";
+                    document.getElementById("boat").style.visibility = "visible";
+                });
             });
         </script>
     </head>

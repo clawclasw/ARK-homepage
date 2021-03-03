@@ -73,25 +73,19 @@ div.header {
 
 /* IMAGES */
 
-@media only screen and (min-device-width : 730px) {
-    #boat {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-}
-
 @media only screen and (max-device-width : 730px) {
     #boat {
         position: absolute;
-        bottom: 0;
-        left: 0;
     }
 }
 
 #boat {
     /* Will be made visible by JQuery after full load, to prevent loading before #waves. */
     visibility: hidden;
+
+    position: fixed;
+    bottom: 10px;
+    left: 0;
     
     z-index: 0;
 
