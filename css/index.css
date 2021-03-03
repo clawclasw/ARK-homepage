@@ -33,6 +33,10 @@ b {
     font-weight: 700;
 }
 
+a {
+    outline: none;
+}
+
 img.undraggable {
     pointer-events: none;
 }
@@ -52,6 +56,10 @@ img.mini {
 .bordered {
     border: 1px solid #222;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+.bordered.light {
+    border: 1px solid #478F91;
 }
 
 .no-margin {
@@ -208,12 +216,29 @@ div.showcase {
     justify-content: center;
 }
 
+div.inline-showcase {
+    display: flex;
+
+    gap: 16px;
+    padding: 16px 0;
+
+    justify-content: space-between;
+}
+
 img.showcase {
     /* Retains ratio of 1920 x 1080. */
     width: 23vw;
     height: 12.9834895833vw;
 
+    box-sizing: border-box;
+
     outline: none;
+}
+
+img.showcase.wider {
+    /* Retains ratio of 1920 x 1080. */
+    width: 25vw;
+    height: 14.1124886775vw;
 }
 
 div.showcase.inner {
