@@ -1,9 +1,6 @@
 /* BASE / UTILITY */
 
 html {
-    /* Will be made visible by JQuery after full load, to prevent loading before #waves. */
-    visibility: hidden;
-
     background-color: #478F91;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -93,6 +90,9 @@ div.header {
 }
 
 #boat {
+    /* Will be made visible by JQuery after full load, to prevent loading before #waves. */
+    visibility: hidden;
+    
     z-index: 0;
 
     width: 100vw;

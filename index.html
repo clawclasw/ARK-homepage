@@ -21,9 +21,9 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
         <script>
-            // Only show content after fully loaded.
-            $(document).ready(function() {
-                document.getElementsByTagName("html")[0].style.visibility = "visible";
+            // Only show boat after waves have fully loaded.
+            $("#waves").ready(function() {
+                document.getElementById("boat").style.visibility = "visible";
             });
         </script>
     </head>
@@ -32,7 +32,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- TODO: Wave movement as you scroll downwards?  -->
         <div class="header">
             <img id="waves" class="undraggable" src="images/waves.png" />
             <img id="boat" class="undraggable" src="images/boat.png" />
@@ -40,6 +39,7 @@
 
         <div class="row dark">
             <div class="showcase">
+                <!-- This is a CSS Grid, and the location of each element is defined by grid-column and grid-row in the style attribute. -->
                 <a
                     href="gallery/image_91.jpg"
 
@@ -107,6 +107,7 @@
                 </a>
 
 
+                <!-- Spans 2 rows/columns.  -->
                 <a
                     class="yir"
                     
