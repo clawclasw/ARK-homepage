@@ -71,7 +71,7 @@ div.header {
 }
 
 /* Reduce header size on mobile, due to bottom bar. */
-@media only screen and (max-width : 730px) {
+@media only screen and (max-width : 500px) {
     div.header {
         height: 90vh;
     }
