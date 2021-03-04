@@ -227,19 +227,16 @@ div.inline-showcase {
 }
 
 img.showcase {
-    /* Retains ratio of 1920 x 1080. */
+    /*
+        Retains ratio of 2560x1440.
+        Height has to be forced, as some images are 1080p (1920x1080) which is a slightly different ratio.
+    */
     width: 23vw;
-    height: 12.9834895833vw;
+    height: 12.9375vw;
 
     box-sizing: border-box;
 
     outline: none;
-}
-
-img.showcase.wider {
-    /* Retains ratio of 1920 x 1080. */
-    width: 25vw;
-    height: 14.1124886775vw;
 }
 
 div.showcase.inner {
@@ -275,6 +272,7 @@ svg.yt {
     /* Account for the gap between the two images in the rows above and below this vid. */
     width: calc(46vw + 16px);
     height: calc(25.9669791666vw + 16px);
+    box-sizing: border-box;
 
     outline: none;
 }
