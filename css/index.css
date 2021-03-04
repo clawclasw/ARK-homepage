@@ -125,7 +125,7 @@ div.header {
 #birds {
     position: absolute;
     left: 54vw;
-    top: 8vh;
+    top: 7vh;
 }
 
 @media only screen and (max-width : 865px) {
