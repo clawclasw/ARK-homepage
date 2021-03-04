@@ -42,11 +42,6 @@ img.undraggable {
     pointer-events: none;
 }
 
-img.mini {
-    width: 384px;
-    height: 185.7px;
-}
-
 .centered {
     margin-left: auto;
     margin-right: auto;
@@ -188,20 +183,6 @@ div.section {
     padding: 0 16px;
 }
 
-div.column {
-    display: flex;
-    flex-direction: column;
-    gap: 2.9vh;
-    align-items: center;
-
-    width: 25%;
-}
-
-div.column.wide {
-    width: 50%;
-    gap: 3.5vh;
-}
-
 /* SPECIAL CASES */
 
 div.showcase {
@@ -217,15 +198,6 @@ div.showcase {
     justify-content: center;
 }
 
-div.inline-showcase {
-    display: flex;
-
-    gap: 16px;
-    padding: 16px 0;
-
-    justify-content: space-between;
-}
-
 img.showcase {
     /*
         Retains ratio of 2560x1440.
@@ -237,10 +209,6 @@ img.showcase {
     box-sizing: border-box;
 
     outline: none;
-}
-
-div.showcase.inner {
-    gap: 1.7vw;
 }
 
 .fancybox-active {
