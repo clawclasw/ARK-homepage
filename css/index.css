@@ -70,6 +70,13 @@ div.header {
     height: 100vh;
 }
 
+/* Reduce header size on mobile, due to bottom bar. */
+@media only screen and (max-width : 730px) {
+    div.header {
+        height: 90vh;
+    }
+}
+
 /* IMAGES */
 
 #boat {
