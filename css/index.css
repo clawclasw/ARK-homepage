@@ -112,8 +112,7 @@ div.header {
 
 @media only screen and (max-width : 730px) {
     #birds {
-        left: 45vw;
-        top: 26vh;
+        visibility: hidden;
     }
 }
 
@@ -162,6 +161,12 @@ div.row {
 
     width: 100%;
     padding: 7rem 0;
+}
+
+@media only screen and (max-device-width : 730px) {
+    div.row {
+        padding: 1rem 0;
+    }
 }
 
 div.row.dark {
