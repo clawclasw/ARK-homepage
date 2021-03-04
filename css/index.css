@@ -192,8 +192,8 @@ div.showcase {
     grid-template-columns: 23vw 23vw 23vw 23vw;
     grid-template-rows: 12.9834895833vw 12.9834895833vw 12.9834895833vw 12.9834895833vw;
 
-    grid-gap: 16px;
-    padding: 16px;
+    grid-gap: 1vw;
+    padding: 1vw;
 
     justify-content: center;
 }
@@ -238,8 +238,8 @@ svg.yt {
     color: #222;
 
     /* Account for the gap between the two images in the rows above and below this vid. */
-    width: calc(46vw + 16px);
-    height: calc(25.9669791666vw + 16px);
+    width: calc(46vw + 1vw);
+    height: calc(25.9669791666vw + 1vw);
     box-sizing: border-box;
 
     outline: none;
