@@ -72,12 +72,6 @@ div.header {
 
 /* IMAGES */
 
-@media only screen and (max-device-width : 730px) {
-    #boat {
-        position: absolute;
-    }
-}
-
 #boat {
     /* Will be made visible by JQuery after full load, to prevent rendering before downloaded. */
     visibility: hidden;
@@ -89,6 +83,13 @@ div.header {
     z-index: 0;
 
     width: 100vw;
+}
+
+@media only screen and (max-device-width : 730px) {
+    #boat {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 #waves {
@@ -111,8 +112,8 @@ div.header {
 
 @media only screen and (max-width : 730px) {
     #birds {
-        left: 50vw;
-        top: 13vh;
+        left: 45vw;
+        top: 26vh;
     }
 }
 
