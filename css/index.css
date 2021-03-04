@@ -167,6 +167,12 @@ div.header {
 
 @media only screen and (max-width : 1450px) {
     #lion {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width : 1170px) {
+    #lion {
         visibility: hidden;
     }
 }
