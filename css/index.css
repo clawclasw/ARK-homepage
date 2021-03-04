@@ -7,11 +7,10 @@ html {
 
     /* Prevent scrolling while the page loads. This is disabled via JS after header images are loaded.. */
     overflow-y: hidden;
-
-    overflow-x: hidden;
 }
 
 html, body {
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -92,7 +91,7 @@ div.header {
     width: 100vw;
 }
 
-@media only screen and (max-device-width : 730px) {
+@media only screen and (max-device-width : 700px) {
     #boat {
         position: absolute;
         bottom: 0;
