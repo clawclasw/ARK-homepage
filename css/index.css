@@ -60,9 +60,12 @@ img.undraggable {
     box-sizing: border-box;
 }
 
+.shadowed {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
 .bordered {
     border: 1px solid #222;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 }
 
 .bordered.light {
@@ -111,6 +114,18 @@ div.header {
 }
 
 #waves {
+    /* Will be made visible by JQuery after full load, to prevent rendering before downloaded. */
+    visibility: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100vw;
+}
+
+#logo {
     /* Will be made visible by JQuery after full load, to prevent rendering before downloaded. */
     visibility: hidden;
 

@@ -37,6 +37,10 @@
         <div class="header">
             <img id="waves" class="undraggable" src="images/waves_cropped.svg" />
             <img id="boat" class="undraggable" src="images/boat_modified.svg" />
+
+            <!-- Text in the logo needs to be done using a PNG, as Dinbek is available as a web font. -->
+            <!-- It's almost identical to Raleway, so that could also be an option. -->
+            <img id="logo" class="undraggable" src="images/ark_text.png" />
         </div>
 
         <!-- Script that displays boat+waves after both images are downloaded, to prevent partial rendering. -->
@@ -45,6 +49,7 @@
                 // Display header images.
                 $("#waves").css("visibility", "visible");
                 $("#boat").css("visibility", "visible");
+                $("#logo").css("visibility", "visible");
 
                 // Give the user their scrollbar back.
                 $("html").css("overflow-y", "auto");
@@ -63,7 +68,7 @@
                     style="grid-column: 1; grid-row: 1;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/1_4k.jpg 2560w,
                             gallery/1_1080.jpg 1920w,
@@ -81,7 +86,7 @@
                     style="grid-column: 2; grid-row: 1;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/2_4k.jpg 2560w,
                             gallery/2_1080.jpg 1920w,
@@ -99,7 +104,7 @@
                     style="grid-column: 3; grid-row: 1;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/3_4k.jpg 2560w,
                             gallery/3_1080.jpg 1920w,
@@ -117,7 +122,7 @@
                     style="grid-column: 4; grid-row: 1;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/4_4k.jpg 2560w,
                             gallery/4_1080.jpg 1920w,
@@ -135,7 +140,7 @@
                     style="grid-column: 1; grid-row: 2;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/5_4k.jpg 2560w,
                             gallery/5_1080.jpg 1920w,
@@ -153,7 +158,7 @@
                     style="grid-column: 4; grid-row: 2;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/6_4k.jpg 2560w,
                             gallery/6_1080.jpg 1920w,
@@ -193,7 +198,7 @@
                     style="grid-column: 1; grid-row: 3;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/7_4k.jpg 2560w,
                             gallery/7_1080.jpg 1920w,
@@ -211,7 +216,7 @@
                     style="grid-column: 4; grid-row: 3;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/8_4k.jpg 2560w,
                             gallery/8_1080.jpg 1920w,
@@ -229,7 +234,7 @@
                     style="grid-column: 1; grid-row: 4;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/9_4k.jpg 2560w,
                             gallery/9_1080.jpg 1920w,
@@ -248,7 +253,7 @@
                     style="grid-column: 2; grid-row: 4;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/10_4k.jpg 2560w,
                             gallery/10_1080.jpg 1920w,
@@ -266,7 +271,7 @@
                     style="grid-column: 3; grid-row: 4;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/11_4k.jpg 2560w,
                             gallery/11_1080.jpg 1920w,
@@ -284,7 +289,7 @@
                     style="grid-column: 4; grid-row: 4;"
                 >
                     <img
-                        class="showcase bordered"
+                        class="showcase bordered shadowed"
                         srcset="
                             gallery/12_4k.jpg 2560w,
                             gallery/12_1080.jpg 1920w,
