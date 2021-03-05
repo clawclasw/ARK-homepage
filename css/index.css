@@ -95,12 +95,12 @@ div.header {
     visibility: hidden;
 
     position: fixed;
-    bottom: 10px;
-    left: 0;
+    bottom: 0;
+    left: 17vw;
     
     z-index: 0;
 
-    width: 100vw;
+    width: 67.5vw;
 }
 
 @media only screen and (max-device-width : 700px) {
