@@ -124,8 +124,10 @@ div.header {
 
 #birds {
     position: absolute;
-    right: -10px;
-    top: -15px;
+    right: 8px;
+    top: 16px;
+
+    width: 406px;
 }
 
 @media only screen and (max-width : 865px) {
@@ -137,8 +139,10 @@ div.header {
 
 #giraffe {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -20px;
+    bottom: -65px;
+
+    width: 186px;
 }
 
 @media only screen and (max-width : 1335px) {
@@ -149,11 +153,13 @@ div.header {
 
 #dog {
     position: absolute;
-    right: -60px;
-    bottom: -25px;
+    right: 16px;
+    bottom: -150px;
+
+    width: 248px;
 }
 
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1270px) {
     #dog {
         visibility: hidden;
     }
@@ -161,8 +167,10 @@ div.header {
 
 #lion {
     position: absolute;
-    right: 64px;
-    bottom: -45px;
+    right: 52px;
+    bottom: -32px;
+
+    width: 205px;
 }
 
 @media only screen and (max-width : 1450px) {
