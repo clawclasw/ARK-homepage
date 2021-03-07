@@ -137,6 +137,21 @@ div.header {
     width: 100vw;
 }
 
+/* Ultrawide can't cope. */
+@media only screen and (min-width : 2000px) and (max-height : 1200px) {
+    #boat {
+        bottom: -8vh;
+    }
+
+    #waves {
+        bottom: -8vh;
+    }
+
+    #logo {
+        height: 160vh;
+    }
+}
+
 #birds {
     position: absolute;
     right: 8px;
